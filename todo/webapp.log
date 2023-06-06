@@ -1,0 +1,1575 @@
+2023/06/02 20:55:48 main.go:15: test
+2023/06/02 21:17:59 base.go:20: sql: unknown driver "sqlite3" (forgotten import?)
+2023/06/02 21:52:01 users.go:29: near "%": syntax error
+2023/06/02 21:52:43 users.go:29: near "%": syntax error
+2023/06/02 21:58:44 users.go:28: not enough args to execute query: want 5 got 4
+2023/06/02 23:27:59 todos.go:20: 4 values for 3 columns
+2023/06/02 23:55:56 todos.go:36: sql: no rows in result set
+2023/06/03 00:07:22 todos.go:46: no such column: crated_at
+2023/06/03 00:23:49 todos.go:68: near "from": syntax error
+2023/06/03 00:24:14 todos.go:68: no such column: crated_at
+2023/06/03 11:10:36 todos.go:90: near "?": syntax error
+2023/06/03 11:32:53 server.go:3217: http: panic serving [::1]:51612: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400011f9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x14000166000}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x14000166000}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400011fad8?, {0x10080bbb0?, 0x14000166000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x14000166000}, 0x1400014c100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007f620?}, {0x10080bbb0, 0x14000166000}, 0x1400014c100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000156090, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:32:54 server.go:3217: http: panic serving [::1]:51613: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005f9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x140001661c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x140001661c0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x10080bbb0?, 0x140001661c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x140001661c0}, 0x1400014c200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007f800?}, {0x10080bbb0, 0x140001661c0}, 0x1400014c200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000156240, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:32:59 server.go:3217: http: panic serving [::1]:51614: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005f9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x14000166380}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x14000166380}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x10080bbb0?, 0x14000166380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x14000166380}, 0x1400014c400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007f980?}, {0x10080bbb0, 0x14000166380}, 0x1400014c400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001563f0, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:33:01 server.go:3217: http: panic serving [::1]:51615: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005a9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x140001e2000}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x140001e2000}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10080bbb0?, 0x140001e2000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x140001e2000}, 0x140001ce000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001b0090?}, {0x10080bbb0, 0x140001e2000}, 0x140001ce000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001b4000, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:10 server.go:3217: http: panic serving [::1]:51616: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x140000c2000}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x140000c2000}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x10080bbb0?, 0x140000c2000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x140000c2000}, 0x140000b2000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c090?}, {0x10080bbb0, 0x140000c2000}, 0x140000b2000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0000, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:11 server.go:3217: http: panic serving [::1]:51617: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x140000c21c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x140000c21c0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x10080bbb0?, 0x140000c21c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x140000c21c0}, 0x140000b2200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c240?}, {0x10080bbb0, 0x140000c21c0}, 0x140000b2200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a01b0, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:12 server.go:3217: http: panic serving [::1]:51618: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005a9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x140001e21c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x140001e21c0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10080bbb0?, 0x140001e21c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x140001e21c0}, 0x140001ce200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001b0240?}, {0x10080bbb0, 0x140001e21c0}, 0x140001ce200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001b41b0, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:12 server.go:3217: http: panic serving [::1]:51619: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005a9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x140001e2380}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x140001e2380}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10080bbb0?, 0x140001e2380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x140001e2380}, 0x140001ce400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001b03c0?}, {0x10080bbb0, 0x140001e2380}, 0x140001ce400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001b4360, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:12 server.go:3217: http: panic serving [::1]:51620: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005a9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x140001e2540}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x140001e2540}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10080bbb0?, 0x140001e2540?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x140001e2540}, 0x140001ce600)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001b0540?}, {0x10080bbb0, 0x140001e2540}, 0x140001ce600)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001b4510, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:12 server.go:3217: http: panic serving [::1]:51621: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1007b2760, 0x100a302c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005f9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x100809918, 0x14000166540}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x10080bbb0?, 0x14000166540}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x10080bbb0?, 0x14000166540?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10080bbb0, 0x14000166540}, 0x1400014c600)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007fb00?}, {0x10080bbb0, 0x14000166540}, 0x1400014c600)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001565a0, {0x10080bdd8, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:22 server.go:3217: http: panic serving [::1]:51624: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140001399c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x14000194000}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x14000194000}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x1014bbbb0?, 0x14000194000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x14000194000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115620?}, {0x1014bbbb0, 0x14000194000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000180090, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:23 server.go:3217: http: panic serving [::1]:51625: runtime error: invalid memory address or nil pointer dereference
+goroutine 3 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005f9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x1400020e000}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x1400020e000}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1014bbbb0?, 0x1400020e000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x1400020e000}, 0x14000208000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007e090?}, {0x1014bbbb0, 0x1400020e000}, 0x14000208000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000200000, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:24 server.go:3217: http: panic serving [::1]:51626: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c2000}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c2000}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c2000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c2000}, 0x140000b2000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c090?}, {0x1014bbbb0, 0x140000c2000}, 0x140000b2000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0000, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:24 server.go:3217: http: panic serving [::1]:51627: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c21c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c21c0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c21c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c21c0}, 0x140000b2200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c240?}, {0x1014bbbb0, 0x140000c21c0}, 0x140000b2200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a01b0, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:24 server.go:3217: http: panic serving [::1]:51628: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c2380}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c2380}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c2380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c2380}, 0x140000b2400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c3c0?}, {0x1014bbbb0, 0x140000c2380}, 0x140000b2400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0360, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:25 server.go:3217: http: panic serving [::1]:51629: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c2540}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c2540}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c2540?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c2540}, 0x140000b2600)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c540?}, {0x1014bbbb0, 0x140000c2540}, 0x140000b2600)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0510, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:29 server.go:3217: http: panic serving [::1]:51630: runtime error: invalid memory address or nil pointer dereference
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c2700}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c2700}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c2700?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c2700}, 0x140000b2800)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c6c0?}, {0x1014bbbb0, 0x140000c2700}, 0x140000b2800)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a06c0, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:30 server.go:3217: http: panic serving [::1]:51631: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c28c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c28c0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c28c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c28c0}, 0x140000b2900)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c840?}, {0x1014bbbb0, 0x140000c28c0}, 0x140000b2900)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0870, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:35 server.go:3217: http: panic serving [::1]:51632: runtime error: invalid memory address or nil pointer dereference
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c2a80}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c2a80}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c2a80?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c2a80}, 0x140000b2b00)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c9c0?}, {0x1014bbbb0, 0x140000c2a80}, 0x140000b2b00)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0a20, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:34:42 server.go:3217: http: panic serving [::1]:51633: runtime error: invalid memory address or nil pointer dereference
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000a89c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c2c40}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c2c40}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1014bbbb0?, 0x140000c2c40?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c2c40}, 0x140000b2d00)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009cb40?}, {0x1014bbbb0, 0x140000c2c40}, 0x140000b2d00)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0bd0, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:35:12 server.go:3217: http: panic serving [::1]:51634: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005f9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140000c2e00}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140000c2e00}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1014bbbb0?, 0x140000c2e00?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140000c2e00}, 0x14000208200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007e240?}, {0x1014bbbb0, 0x140000c2e00}, 0x14000208200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140002001b0, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:35:55 server.go:3217: http: panic serving [::1]:51636: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x1400005a9c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x140001941c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x140001941c0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1014bbbb0?, 0x140001941c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x140001941c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115800?}, {0x1014bbbb0, 0x140001941c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000180240, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:35:56 server.go:3217: http: panic serving [::1]:51637: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101462760, 0x1016e02c0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.(*Template).escape(0x140000609c8?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:97 +0x24
+html/template.(*Template).Execute(0x0, {0x1014b9918, 0x1400020e1c0}, {0x0, 0x0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:121 +0x30
+todo/controllers.top({0x1014bbbb0?, 0x1400020e1c0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x84
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x1014bbbb0?, 0x1400020e1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014bbbb0, 0x1400020e1c0}, 0x14000208300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007e300?}, {0x1014bbbb0, 0x1400020e1c0}, 0x14000208300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000200240, {0x1014bbdd8, 0x14000115530})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/03 11:36:02 route_main.go:13: open todo/views/templates/top.html: no such file or directory
+2023/06/03 11:39:04 route_main.go:13: open todo/views/templates/top.html: no such file or directory
+2023/06/05 23:02:43 server.go:3217: http: panic serving [::1]:51034: open views/tempalates/%!s(MISSING).htim: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10344d280, 0x14000115770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10349d6b0?, 0x1400019a000}, {0x103428560, 0x10349aa30}, {0x14000139a18?, 0x1, 0x14000139a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x10349d6b0?, 0x1400019a000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x10349d6b0?, 0x1400019a000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10349d6b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115650?}, {0x10349d6b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178090, {0x10349d938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:02:44 server.go:3217: http: panic serving [::1]:51039: open views/tempalates/%!s(MISSING).htim: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10344d280, 0x140001158f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10349d6b0?, 0x1400019a1c0}, {0x103428560, 0x10349aa30}, {0x1400005aa18?, 0x1, 0x1400005aa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x10349d6b0?, 0x1400019a1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10349d6b0?, 0x1400019a1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10349d6b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115830?}, {0x10349d6b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178240, {0x10349d938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:02:44 server.go:3217: http: panic serving [::1]:51040: open views/tempalates/%!s(MISSING).htim: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10344d280, 0x14000115a70})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10349d6b0?, 0x1400019a380}, {0x103428560, 0x10349aa30}, {0x1400005aa18?, 0x1, 0x1400005aa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x10349d6b0?, 0x1400019a380?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10349d6b0?, 0x1400019a380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10349d6b0, 0x1400019a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001159b0?}, {0x10349d6b0, 0x1400019a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001783f0, {0x10349d938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:02:45 server.go:3217: http: panic serving [::1]:51045: open views/tempalates/%!s(MISSING).htim: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10344d280, 0x14000115bf0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10349d6b0?, 0x1400019a540}, {0x103428560, 0x10349aa30}, {0x1400005aa18?, 0x1, 0x1400005aa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x10349d6b0?, 0x1400019a540?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10349d6b0?, 0x1400019a540?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10349d6b0, 0x1400019a540}, 0x14000170700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115b30?}, {0x10349d6b0, 0x1400019a540}, 0x14000170700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001785a0, {0x10349d938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:02:50 server.go:3217: http: panic serving [::1]:51066: open views/tempalates/%!s(MISSING).htim: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10344d280, 0x14000092180})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10349d6b0?, 0x140000ca000}, {0x103428560, 0x10349aa30}, {0x140000a6a18?, 0x1, 0x140000a6a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x10349d6b0?, 0x140000ca000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x140000a6ad8?, {0x10349d6b0?, 0x140000ca000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10349d6b0, 0x140000ca000}, 0x140000b6000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000092090?}, {0x10349d6b0, 0x140000ca000}, 0x140000b6000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000096000, {0x10349d938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:03:20 server.go:3217: http: panic serving [::1]:51189: open views/tempalates/%!s(MISSING).htim: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10344d280, 0x14000092300})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10349d6b0?, 0x140000ca1c0}, {0x103428560, 0x10349aa30}, {0x140000a6a18?, 0x1, 0x140000a6a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x10349d6b0?, 0x140000ca1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x140000a6ad8?, {0x10349d6b0?, 0x140000ca1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10349d6b0, 0x140000ca1c0}, 0x140000b6200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000092240?}, {0x10349d6b0, 0x140000ca1c0}, 0x140000b6200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000961b0, {0x10349d938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:13 server.go:3217: http: panic serving [::1]:51400: open views/tempalates/%!s(MISSING).html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1034f5280, 0x14000109770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1035456b0?, 0x14000174000}, {0x1034d0560, 0x103542a30}, {0x1400011fa18?, 0x1, 0x1400011fa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1035456b0?, 0x14000174000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400011fad8?, {0x1035456b0?, 0x14000174000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1035456b0, 0x14000174000}, 0x1400014e100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000109650?}, {0x1035456b0, 0x14000174000}, 0x1400014e100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000156090, {0x103545938, 0x14000109560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:14 server.go:3217: http: panic serving [::1]:51405: open views/tempalates/%!s(MISSING).html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1034f5280, 0x140001098f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1035456b0?, 0x140001741c0}, {0x1034d0560, 0x103542a30}, {0x1400005fa18?, 0x1, 0x1400005fa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1035456b0?, 0x140001741c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1035456b0?, 0x140001741c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1035456b0, 0x140001741c0}, 0x1400014e300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000109830?}, {0x1035456b0, 0x140001741c0}, 0x1400014e300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000156240, {0x103545938, 0x14000109560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:14 server.go:3217: http: panic serving [::1]:51406: open views/tempalates/%!s(MISSING).html: no such file or directory
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1034f5280, 0x14000109a70})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1035456b0?, 0x14000174380}, {0x1034d0560, 0x103542a30}, {0x1400005fa18?, 0x1, 0x1400005fa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1035456b0?, 0x14000174380?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1035456b0?, 0x14000174380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1035456b0, 0x14000174380}, 0x1400014e500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001099b0?}, {0x1035456b0, 0x14000174380}, 0x1400014e500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001563f0, {0x103545938, 0x14000109560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:15 server.go:3217: http: panic serving [::1]:51411: open views/tempalates/%!s(MISSING).html: no such file or directory
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1034f5280, 0x14000204180})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1035456b0?, 0x14000236000}, {0x1034d0560, 0x103542a30}, {0x14000212a18?, 0x1, 0x14000212a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1035456b0?, 0x14000236000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x14000212ad8?, {0x1035456b0?, 0x14000236000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1035456b0, 0x14000236000}, 0x14000222000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000204090?}, {0x1035456b0, 0x14000236000}, 0x14000222000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000208000, {0x103545938, 0x14000109560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:31 server.go:3217: http: panic serving [::1]:51476: open views/templates/%!s(MISSING).html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102fc1280, 0x14000113770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1030116b0?, 0x140001a2000}, {0x102f9c560, 0x10300ea30}, {0x14000137a18?, 0x1, 0x14000137a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1030116b0?, 0x140001a2000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x14000137ad8?, {0x1030116b0?, 0x140001a2000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1030116b0, 0x140001a2000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000113650?}, {0x1030116b0, 0x140001a2000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000180090, {0x103011938, 0x14000113560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:31 server.go:3217: http: panic serving [::1]:51479: open views/templates/%!s(MISSING).html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102fc1280, 0x1400009c180})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1030116b0?, 0x140000c2000}, {0x102f9c560, 0x10300ea30}, {0x140000a8a18?, 0x1, 0x140000a8a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1030116b0?, 0x140000c2000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1030116b0?, 0x140000c2000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1030116b0, 0x140000c2000}, 0x140000b0000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c090?}, {0x1030116b0, 0x140000c2000}, 0x140000b0000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0000, {0x103011938, 0x14000113560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:32 server.go:3217: http: panic serving [::1]:51480: open views/templates/%!s(MISSING).html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102fc1280, 0x1400009c300})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1030116b0?, 0x140000c21c0}, {0x102f9c560, 0x10300ea30}, {0x140000a8a18?, 0x1, 0x140000a8a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1030116b0?, 0x140000c21c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1030116b0?, 0x140000c21c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1030116b0, 0x140000c21c0}, 0x140000b0200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c240?}, {0x1030116b0, 0x140000c21c0}, 0x140000b0200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a01b0, {0x103011938, 0x14000113560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:32 server.go:3217: http: panic serving [::1]:51485: open views/templates/%!s(MISSING).html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102fc1280, 0x1400009c480})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1030116b0?, 0x140000c2380}, {0x102f9c560, 0x10300ea30}, {0x140000a8a18?, 0x1, 0x140000a8a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1030116b0?, 0x140000c2380?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x140000a8ad8?, {0x1030116b0?, 0x140000c2380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1030116b0, 0x140000c2380}, 0x140000b0400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c3c0?}, {0x1030116b0, 0x140000c2380}, 0x140000b0400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a0360, {0x103011938, 0x14000113560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:04:58 server.go:3217: http: panic serving [::1]:51596: open todo/views/templates/%!s(MISSING).html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101359280, 0x14000115770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1013a96b0?, 0x1400019a000}, {0x101334560, 0x1013a6a30}, {0x14000139a18?, 0x1, 0x14000139a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1013a96b0?, 0x1400019a000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x1013a96b0?, 0x1400019a000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1013a96b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115650?}, {0x1013a96b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178090, {0x1013a9938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:05:00 server.go:3217: http: panic serving [::1]:51605: open todo/views/templates/%!s(MISSING).html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101359280, 0x140001158f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1013a96b0?, 0x1400019a1c0}, {0x101334560, 0x1013a6a30}, {0x1400005aa18?, 0x1, 0x1400005aa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1013a96b0?, 0x1400019a1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1013a96b0?, 0x1400019a1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1013a96b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115830?}, {0x1013a96b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178240, {0x1013a9938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:05:02 server.go:3217: http: panic serving [::1]:51611: open todo/views/templates/%!s(MISSING).html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101359280, 0x14000200180})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1013a96b0?, 0x1400020e000}, {0x101334560, 0x1013a6a30}, {0x1400005fa18?, 0x1, 0x1400005fa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1013a96b0?, 0x1400020e000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1013a96b0?, 0x1400020e000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1013a96b0, 0x1400020e000}, 0x14000208000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000200090?}, {0x1013a96b0, 0x1400020e000}, 0x14000208000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000202000, {0x1013a9938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:06:02 server.go:3217: http: panic serving [::1]:51855: open todo/views/templates/%!s(MISSING).html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101359280, 0x14000200300})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1013a96b0?, 0x1400020e1c0}, {0x101334560, 0x1013a6a30}, {0x1400005fa18?, 0x1, 0x1400005fa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x1013a96b0?, 0x1400020e1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1013a96b0?, 0x1400020e1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1013a96b0, 0x1400020e1c0}, 0x14000208200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000200240?}, {0x1013a96b0, 0x1400020e1c0}, 0x14000208200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140002021b0, {0x1013a9938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:06:35 server.go:3217: http: panic serving [::1]:51990: open todo/views/templates/%!s(MISSING).html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104a59280, 0x14000109770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x104aa96b0?, 0x14000174000}, {0x104a34560, 0x104aa6a30}, {0x1400011fa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x104aa96b0?, 0x14000174000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400011fad8?, {0x104aa96b0?, 0x14000174000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aa96b0, 0x14000174000}, 0x1400014e100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000109650?}, {0x104aa96b0, 0x14000174000}, 0x1400014e100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000156090, {0x104aa9938, 0x14000109560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:06:36 server.go:3217: http: panic serving [::1]:51995: open todo/views/templates/%!s(MISSING).html: no such file or directory
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104a59280, 0x1400019c180})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x104aa96b0?, 0x140001ce000}, {0x104a34560, 0x104aa6a30}, {0x140001aaa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x104aa96b0?, 0x140001ce000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140001aaad8?, {0x104aa96b0?, 0x140001ce000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aa96b0, 0x140001ce000}, 0x140001ba000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400019c090?}, {0x104aa96b0, 0x140001ce000}, 0x140001ba000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001a0000, {0x104aa9938, 0x14000109560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:06:36 server.go:3217: http: panic serving [::1]:51996: open todo/views/templates/%!s(MISSING).html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104a59280, 0x14000096180})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x104aa96b0?, 0x140000ba000}, {0x104a34560, 0x104aa6a30}, {0x1400005ba08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x104aa96b0?, 0x140000ba000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x104aa96b0?, 0x140000ba000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104aa96b0, 0x140000ba000}, 0x140000a8000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000096090?}, {0x104aa96b0, 0x140000ba000}, 0x140000a8000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400009a000, {0x104aa9938, 0x14000109560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:07:18 server.go:3217: http: panic serving [::1]:52164: open views/templates/%!s(MISSING).html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102cd1280, 0x14000115770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102d216b0?, 0x1400019a000}, {0x102cac560, 0x102d1ea30}, {0x14000139a08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x102d216b0?, 0x1400019a000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x102d216b0?, 0x1400019a000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102d216b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115650?}, {0x102d216b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178090, {0x102d21938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:07:18 server.go:3217: http: panic serving [::1]:52169: open views/templates/%!s(MISSING).html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102cd1280, 0x140001158f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102d216b0?, 0x1400019a1c0}, {0x102cac560, 0x102d1ea30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x102d216b0?, 0x1400019a1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102d216b0?, 0x1400019a1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102d216b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115830?}, {0x102d216b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178240, {0x102d21938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:07:19 server.go:3217: http: panic serving [::1]:52170: open views/templates/%!s(MISSING).html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102cd1280, 0x14000115a70})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102d216b0?, 0x1400019a380}, {0x102cac560, 0x102d1ea30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x20c
+todo/controllers.top({0x102d216b0?, 0x1400019a380?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102d216b0?, 0x1400019a380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102d216b0, 0x1400019a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001159b0?}, {0x102d216b0, 0x1400019a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001783f0, {0x102d21938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:02 server.go:3217: http: panic serving [::1]:53064: open views/templates/layout.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10054d280, 0x1400009b770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10059d6b0?, 0x14000122000}, {0x100528560, 0x10059aa30}, {0x140000bfa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x10059d6b0?, 0x14000122000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140000bfad8?, {0x10059d6b0?, 0x14000122000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059d6b0, 0x14000122000}, 0x140000f8100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009b650?}, {0x10059d6b0, 0x14000122000}, 0x140000f8100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000100090, {0x10059d938, 0x1400009b560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:03 server.go:3217: http: panic serving [::1]:53069: open views/templates/layout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10054d280, 0x1400009b8f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10059d6b0?, 0x140001221c0}, {0x100528560, 0x10059aa30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x10059d6b0?, 0x140001221c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10059d6b0?, 0x140001221c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059d6b0, 0x140001221c0}, 0x140000f8300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009b830?}, {0x10059d6b0, 0x140001221c0}, 0x140000f8300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000100240, {0x10059d938, 0x1400009b560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:04 server.go:3217: http: panic serving [::1]:53074: open views/templates/layout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10054d280, 0x1400009ba70})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10059d6b0?, 0x14000122380}, {0x100528560, 0x10059aa30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x10059d6b0?, 0x14000122380?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10059d6b0?, 0x14000122380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059d6b0, 0x14000122380}, 0x140000f8500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009b9b0?}, {0x10059d6b0, 0x14000122380}, 0x140000f8500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001003f0, {0x10059d938, 0x1400009b560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:05 server.go:3217: http: panic serving [::1]:53075: open views/templates/layout.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10054d280, 0x1400009bbf0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10059d6b0?, 0x14000122540}, {0x100528560, 0x10059aa30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x10059d6b0?, 0x14000122540?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10059d6b0?, 0x14000122540?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059d6b0, 0x14000122540}, 0x140000f8700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009bb30?}, {0x10059d6b0, 0x14000122540}, 0x140000f8700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001005a0, {0x10059d938, 0x1400009b560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:27 server.go:3217: http: panic serving [::1]:53167: open todo/views/templates/layout.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102971280, 0x14000115770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1029c16b0?, 0x1400021a000}, {0x10294c560, 0x1029bea30}, {0x14000139a08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x1029c16b0?, 0x1400021a000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x1029c16b0?, 0x1400021a000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029c16b0, 0x1400021a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115650?}, {0x1029c16b0, 0x1400021a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178090, {0x1029c1938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:28 server.go:3217: http: panic serving [::1]:53172: open todo/views/templates/layout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102971280, 0x140001158f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1029c16b0?, 0x1400021a1c0}, {0x10294c560, 0x1029bea30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x1029c16b0?, 0x1400021a1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1029c16b0?, 0x1400021a1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029c16b0, 0x1400021a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115830?}, {0x1029c16b0, 0x1400021a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178240, {0x1029c1938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:28 server.go:3217: http: panic serving [::1]:53173: open todo/views/templates/layout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102971280, 0x14000115a70})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1029c16b0?, 0x1400021a380}, {0x10294c560, 0x1029bea30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x1029c16b0?, 0x1400021a380?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1029c16b0?, 0x1400021a380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029c16b0, 0x1400021a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001159b0?}, {0x1029c16b0, 0x1400021a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001783f0, {0x1029c1938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:28 server.go:3217: http: panic serving [::1]:53178: open todo/views/templates/layout.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102971280, 0x14000115bf0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1029c16b0?, 0x1400021a540}, {0x10294c560, 0x1029bea30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x1029c16b0?, 0x1400021a540?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1029c16b0?, 0x1400021a540?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029c16b0, 0x1400021a540}, 0x14000170700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115b30?}, {0x1029c16b0, 0x1400021a540}, 0x14000170700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001785a0, {0x1029c1938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:11:29 server.go:3217: http: panic serving [::1]:53181: open todo/views/templates/layout.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102971280, 0x14000280180})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1029c16b0?, 0x1400028e000}, {0x10294c560, 0x1029bea30}, {0x1400005fa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.top({0x1029c16b0?, 0x1400028e000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1029c16b0?, 0x1400028e000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029c16b0, 0x1400028e000}, 0x14000288000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000280090?}, {0x1029c16b0, 0x1400028e000}, 0x14000288000)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000282000, {0x1029c1938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:12:27 server.go:3217: http: panic serving [::1]:53414: open todo/views/templates/layout.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x101412320, 0x1400007f770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1014628f0?, 0x14000174000}, {0x1013eca80, 0x10145fc70}, {0x1400011fa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1014628f0?, 0x14000174000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400011fad8?, {0x1014628f0?, 0x14000174000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1014628f0, 0x14000174000}, 0x1400014c100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007f650?}, {0x1014628f0, 0x14000174000}, 0x1400014c100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000156090, {0x101462b78, 0x1400007f560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:14:07 server.go:3217: http: panic serving [::1]:53820: open todo/views/templates/top.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1054b6320, 0x1400007f770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1055068f0?, 0x1400017c000}, {0x105490a80, 0x105503c70}, {0x14000129a18?, 0x1, 0x14000129a88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1055068f0?, 0x1400017c000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x14000129ad8?, {0x1055068f0?, 0x1400017c000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1055068f0, 0x1400017c000}, 0x14000156100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007f650?}, {0x1055068f0, 0x1400017c000}, 0x14000156100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400015e090, {0x105506b78, 0x1400007f560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:14:34 server.go:3217: http: panic serving [::1]:53925: open todo/views/templates/top.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1054b6320, 0x1400007f8f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1055068f0?, 0x1400017c1c0}, {0x105490a80, 0x105503c70}, {0x1400005fa18?, 0x1, 0x1400005fa88?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1055068f0?, 0x1400017c1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x58
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1055068f0?, 0x1400017c1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1055068f0, 0x1400017c1c0}, 0x14000156300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007f830?}, {0x1055068f0, 0x1400017c1c0}, 0x14000156300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400015e240, {0x105506b78, 0x1400007f560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:15:29 server.go:3217: http: panic serving [::1]:54149: open views/templates/layout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10111a320, 0x140000a3770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10116a8f0?, 0x14000122000}, {0x1010f4a80, 0x101167c70}, {0x140000c5a08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x10116a8f0?, 0x14000122000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140000c5ad8?, {0x10116a8f0?, 0x14000122000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10116a8f0, 0x14000122000}, 0x140000fa100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140000a3650?}, {0x10116a8f0, 0x14000122000}, 0x140000fa100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000102090, {0x10116ab78, 0x140000a3560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:15:29 server.go:3217: http: panic serving [::1]:54154: open views/templates/layout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x10111a320, 0x140000a38f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x10116a8f0?, 0x140001221c0}, {0x1010f4a80, 0x101167c70}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x10116a8f0?, 0x140001221c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x10116a8f0?, 0x140001221c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10116a8f0, 0x140001221c0}, 0x140000fa300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140000a3830?}, {0x10116a8f0, 0x140001221c0}, 0x140000fa300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000102240, {0x10116ab78, 0x140000a3560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:21:37 server.go:3217: http: panic serving [::1]:55626: open todo/views/templates/layout.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104905280, 0x14000115770})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1049556b0?, 0x1400019a000}, {0x1048e0560, 0x104952a30}, {0x14000139a08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1049556b0?, 0x1400019a000?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x1049556b0?, 0x1400019a000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049556b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115650?}, {0x1049556b0, 0x1400019a000}, 0x14000170100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178090, {0x104955938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:21:38 server.go:3217: http: panic serving [::1]:55631: open todo/views/templates/layout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104905280, 0x140001158f0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1049556b0?, 0x1400019a1c0}, {0x1048e0560, 0x104952a30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1049556b0?, 0x1400019a1c0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1049556b0?, 0x1400019a1c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049556b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115830?}, {0x1049556b0, 0x1400019a1c0}, 0x14000170300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178240, {0x104955938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:21:40 server.go:3217: http: panic serving [::1]:55640: open todo/views/templates/layout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104905280, 0x14000115a70})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1049556b0?, 0x1400019a380}, {0x1048e0560, 0x104952a30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1049556b0?, 0x1400019a380?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1049556b0?, 0x1400019a380?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049556b0, 0x1400019a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001159b0?}, {0x1049556b0, 0x1400019a380}, 0x14000170500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001783f0, {0x104955938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:21:43 server.go:3217: http: panic serving [::1]:55653: open todo/views/templates/layout.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104905280, 0x14000115bf0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1049556b0?, 0x1400019a540}, {0x1048e0560, 0x104952a30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1049556b0?, 0x1400019a540?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1049556b0?, 0x1400019a540?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049556b0, 0x1400019a540}, 0x14000170700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115b30?}, {0x1049556b0, 0x1400019a540}, 0x14000170700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001785a0, {0x104955938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/05 23:21:48 server.go:3217: http: panic serving [::1]:55674: open todo/views/templates/layout.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x104905280, 0x14000115d70})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x1049556b0?, 0x1400019a700}, {0x1048e0560, 0x104952a30}, {0x1400005aa08?, 0x2, 0x0?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x22c
+todo/controllers.top({0x1049556b0?, 0x1400019a700?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1049556b0?, 0x1400019a700?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049556b0, 0x1400019a700}, 0x14000170900)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115cb0?}, {0x1049556b0, 0x1400019a700}, 0x14000170900)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000178750, {0x104955938, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/06 23:39:04 server.go:3217: http: panic serving [::1]:54649: open views/templates/public_nav.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102c2d840, 0x1400007fef0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102c7def0?, 0x1400028c460}, {0x0, 0x0}, {0x1400022f9f8?, 0x3, 0x1400022fa08?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.login({0x102c7def0?, 0x1400028c460?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400022fad8?, {0x102c7def0?, 0x1400028c460?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102c7def0, 0x1400028c460}, 0x14000280400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115650?}, {0x102c7def0, 0x1400028c460}, 0x14000280400)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000174090, {0x102c7e178, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/06 23:39:04 server.go:3217: http: panic serving [::1]:54650: open views/templates/public_nav.html: no such file or directory
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102c2d840, 0x140001db200})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102c7def0?, 0x140001aa700}, {0x0, 0x0}, {0x140001879f8?, 0x3, 0x14000187a08?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.login({0x102c7def0?, 0x140001aa700?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x14000187ad8?, {0x102c7def0?, 0x140001aa700?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102c7def0, 0x140001aa700}, 0x1400018e700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001dad80?}, {0x102c7def0, 0x140001aa700}, 0x1400018e700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000192360, {0x102c7e178, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/06 23:39:05 server.go:3217: http: panic serving [::1]:54651: open views/templates/public_nav.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102c2d840, 0x14000227710})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102c7def0?, 0x1400021a2a0}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x1400005aa08?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.login({0x102c7def0?, 0x1400021a2a0?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102c7def0?, 0x1400021a2a0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102c7def0, 0x1400021a2a0}, 0x1400016a300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000227290?}, {0x102c7def0, 0x1400021a2a0}, 0x1400016a300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001742d0, {0x102c7e178, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/06 23:39:10 server.go:3217: http: panic serving [::1]:54652: open views/templates/public_nav.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102c2d840, 0x14000227c50})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102c7def0?, 0x1400021a460}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x1400005aa08?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.login({0x102c7def0?, 0x1400021a460?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102c7def0?, 0x1400021a460?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102c7def0, 0x1400021a460}, 0x1400016a500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002277d0?}, {0x102c7def0, 0x1400021a460}, 0x1400016a500)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000174480, {0x102c7e178, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/06 23:39:43 server.go:3217: http: panic serving [::1]:54773: open views/templates/public_nav.html: no such file or directory
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102c2d840, 0x1400025c1b0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102c7def0?, 0x1400021a620}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x1400005aa08?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:16 +0x1f4
+todo/controllers.login({0x102c7def0?, 0x1400021a620?}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102c7def0?, 0x1400021a620?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102c7def0, 0x1400021a620}, 0x1400016a700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000227d10?}, {0x102c7def0, 0x1400021a620}, 0x1400016a700)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000174630, {0x102c7e178, 0x14000115560})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
