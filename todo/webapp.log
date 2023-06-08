@@ -1573,3 +1573,83 @@ net/http.(*conn).serve(0x14000174630, {0x102c7e178, 0x14000115560})
 	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
 created by net/http.(*Server).Serve
 	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/08 22:33:09 server.go:3217: http: panic serving [::1]:57023: template: index.html:1: unexpected "content" in define clause
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102b51fe0, 0x14000113300})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102bb62d0?, 0x140001a2000}, {0x0, 0x0}, {0x140001399f8?, 0x3, 0x14000139a08?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:17 +0x1f4
+todo/controllers.index({0x102bb62d0, 0x140001a2000}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x102bb62d0?, 0x140001a2000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102bb62d0, 0x140001a2000}, 0x1400016a100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115680?}, {0x102bb62d0, 0x140001a2000}, 0x1400016a100)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017c090, {0x102bb6558, 0x14000115590})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/08 22:33:10 server.go:3217: http: panic serving [::1]:57024: template: index.html:1: unexpected "content" in define clause
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x102b51fe0, 0x14000113510})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/html/template/template.go:368
+todo/controllers.generateHTML({0x102bb62d0?, 0x140001a22a0}, {0x0, 0x0}, {0x140001399f8?, 0x3, 0x14000056a08?})
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:17 +0x1f4
+todo/controllers.index({0x102bb62d0, 0x140001a22a0}, 0x3b?)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/route_main.go:21 +0xb8
+net/http.HandlerFunc.ServeHTTP(0x14000056ad8?, {0x102bb62d0?, 0x140001a22a0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102bb62d0, 0x140001a22a0}, 0x1400016a200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115ef0?}, {0x102bb62d0, 0x140001a22a0}, 0x1400016a200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017c240, {0x102bb6558, 0x14000115590})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/09 00:17:05 server.go:3217: http: panic serving [::1]:55416: runtime error: index out of range [2] with length 0
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1050f1de0, 0x14000124168})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+todo/controllers.parseURL.func1({0x105116890, 0x140001a4000}, 0x1400016a200)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:62 +0x100
+net/http.HandlerFunc.ServeHTTP(0x14000139ad8?, {0x105116890?, 0x140001a4000?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x105116890, 0x140001a4000}, 0x1400016a200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000113740?}, {0x105116890, 0x140001a4000}, 0x1400016a200)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017c090, {0x105116b18, 0x14000113650})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
+2023/06/09 00:17:06 server.go:3217: http: panic serving [::1]:55421: runtime error: index out of range [2] with length 0
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1854 +0xb0
+panic({0x1050f1de0, 0x140001241b0})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/runtime/panic.go:890 +0x258
+todo/controllers.parseURL.func1({0x105116890, 0x140001a41c0}, 0x1400016a300)
+	/Users/akitoshiga/Documents/learning_go/todo/controllers/server.go:62 +0x100
+net/http.HandlerFunc.ServeHTTP(0x14000056ad8?, {0x105116890?, 0x140001a41c0?}, 0x10?)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x105116890, 0x140001a41c0}, 0x1400016a300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000113920?}, {0x105116890, 0x140001a41c0}, 0x1400016a300)
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017c240, {0x105116b18, 0x14000113650})
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/server.go:3089 +0x520
