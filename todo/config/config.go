@@ -6,7 +6,7 @@ import (
 )
 import "gopkg.in/go-ini/ini.v1"
 
-type ConfigList struct {
+type configList struct {
 	Port      string
 	SQLDriver string
 	DbName    string
@@ -14,20 +14,20 @@ type ConfigList struct {
 	Static    string
 }
 
-var Config ConfigList
+var Config configList
 
 func init() {
-	LoadConfig()
+	loadConfig()
 	utils.LoggingSettings(Config.LogFile)
 }
 
-func LoadConfig() {
+func loadConfig() {
 	cfg, err := ini.Load("config.ini")
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-	Config = ConfigList{
+	Config = configList{
 		Port:      cfg.Section("web").Key("port").MustString("8080"),
 		SQLDriver: cfg.Section("db").Key("driver").String(),
 		DbName:    cfg.Section("db").Key("name").String(),
