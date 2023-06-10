@@ -3,13 +3,14 @@ package controllers
 import (
 	"fmt"
 	"html/template"
-	"log"
 	"net/http"
 	"regexp"
 	"strconv"
 	"todo/config"
 	"todo/models"
 )
+
+var validPath = regexp.MustCompile("^/todos/(edit|update|delete)/([0-9]+)$")
 
 func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) {
 	var files []string
@@ -51,8 +52,6 @@ func session(w http.ResponseWriter, r *http.Request) (session models.Session, er
 	return
 }
 
-var validPath = regexp.MustCompile("^/todos/(edit|update|delete)/([0-9]+)$")
-
 func parseURL(fn func(w http.ResponseWriter, r *http.Request, qi int)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		q := validPath.FindStringSubmatch(r.URL.Path)
@@ -66,25 +65,4 @@ func parseURL(fn func(w http.ResponseWriter, r *http.Request, qi int)) http.Hand
 		}
 		fn(w, r, qi)
 	}
-}
-
-func todoDelete(w http.ResponseWriter, r *http.Request, id int) {
-	session, err := session(w, r)
-	if err != nil {
-		http.Redirect(w, r, "/login", 302)
-
-	} else {
-		_, err := session.GetUserBySession()
-		if err != nil {
-			log.Println(err)
-		}
-	}
-	t, err := models.GetTodo(id)
-	if err != nil {
-		log.Println(err)
-	}
-	if err := t.DeleteTodo(); err != nil {
-		log.Println(err)
-	}
-	http.Redirect(w, r, "/todos", 302)
 }
